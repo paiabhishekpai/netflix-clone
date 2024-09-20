@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(assets/images/bg.jpg);
+  background-size: max(1200px, 100vw);
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 644px;
+  position: relative;
+}
+.main .box {
+  background-color: black;
+  opacity: 0.7;
+  width: 100%;
+  height: 644px;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
+  height: 50px;
+}
+
+nav img {
+  width: 150px;
+  position: relative;
+  z-index: 10;
+}
+
+.main .hero {
+  color: white;
+  height: calc(100% - 50px);
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero > :nth-child(1) {
+  font-weight: 900;
+  font-size: 48px;
+}
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+}
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.hero .chela {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.chela input {
+  background-color: rgba(41, 39, 39, 0.834);
+  padding: 15px 100px 15px 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+.btn {
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+  color: white;
+}
+.chela .btn {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 11px 10px 15px 5px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.btn-red {
+  background-color: red;
+}
+
+.btn-sn {
+  padding: 10px 20px;
+  position: relative;
+  z-index: 10;
+  font-weight: bold;
+}
+
+.btn-lang {
+  background-color: rgba(38, 35, 35, 0.812);
+}
+
+.sep {
+  background-color: rgba(47, 45, 45, 0.835);
+  height: 7px;
+}
+
+.first {
+  max-width: 100vw;
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectext {
+  padding: 0px 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sectext :nth-child(1) {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.sectext :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+}
+.secimg {
+  position: relative;
+}
+.secimg img {
+  width: 555px;
+}
+.secimg video {
+  width: 402px;
+  position: absolute;
+  top: 90px;
+  right: 78px;
+}
+.third video{
+    width:350px;
+    position: absolute;
+    top: 35px;
+    right: 100px;
+}
+.third img{
+    position: relative;
+    z-index: 10;
+}
+.faq {
+  color: white;
+  text-align: center;
+  padding: 34px;
+}
+
+.faq p {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.faqbox {
+  background-color: rgba(53, 51, 51, 0.867);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  max-width: 90vw;
+  margin: 8px auto;
+  padding: 30px 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+.faq > span {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 10px 0px;
+}
+
+footer {
+  color: rgb(137, 132, 132);
+  max-width: 90vw;
+  margin: auto;
+  padding: 10px;
+}
+
+footer .questions {
+  padding: 10px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-item a {
+  color: rgb(138, 134, 134);
+}
+
+/* 
+@media screen and (max-width: 1300px) {
+
+  nav{
+      max-width: 90vw;
+  }
+
+  .first {
+      flex-wrap: wrap;
+  }
+
+  .secImg img {
+      width: 305px;
+  }
+
+  .secImg video {
+      width: 305px;
+  }
+
+  .hero> :nth-child(1) {
+      font-size: 32px;
+  }
+
+  .hero> :nth-child(2) {
+      font-size: 18px;
+  }
+
+  .hero> :nth-child(3) {
+      font-size: 18px;
+  }
+
+  .hero .btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+  }
+
+  .faq h2 {
+      text-align: center;
+      font-size: 32px;
+  }
+
+  footer {
+      max-width: 90vw;
+      padding: 75px 0;
+  }
+
+  .footer-item{
+      align-items: center;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+  .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+  }
+} */
+
+
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
