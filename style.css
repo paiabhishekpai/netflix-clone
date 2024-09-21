@@ -225,7 +225,7 @@ footer .questions {
   color: rgb(138, 134, 134);
 }
 
-/* 
+
 @media screen and (max-width: 1300px) {
 
   nav{
@@ -290,7 +290,7 @@ footer .questions {
       grid-template-columns: 1fr 1fr;
       gap: 25px;
   }
-} */
+}
 
 
 .footer a {
